@@ -9,4 +9,4 @@ test-reports/
 *.iml
 .classpath_nb
 .DS_Store
-
+*.tar
