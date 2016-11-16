@@ -21,16 +21,6 @@
       "destination": "/root/app"
     },
     {
-      "type": "file",
-      "source": "{{user `home`}}/.sbt/",
-      "destination": "/root/.sbt"
-    },
-    {
-      "type": "file",
-      "source": "{{user `home`}}/.ivy2/",
-      "destination": "/root/.ivy2"
-    },
-    {
       "type": "shell",
       "inline": [
         "cd /root/app",
