@@ -2,7 +2,9 @@
   "variables": {
     "home": "{{env `HOME`}}",
     "login_username": "{{env `DOCKER_USERNAME`}}",
-    "login_password": "{{env `DOCKER_PASSWORD`}}"
+    "login_password": "{{env `DOCKER_PASSWORD`}}",
+    "git_commit_id": "{{env `TRAVIS_COMMIT`}}",
+    "git_branch": "{{env `TRAVIS_BRANCH`}}"
   },
   "builders": [{
     "type": "docker",
@@ -27,7 +29,8 @@
     [
       {
         "type": "docker-import",
-        "repository": "imageintelligence/http4sbin-learning-docker"
+        "repository": "imageintelligence/http4sbin-learning-docker",
+        "tag": "{{user `git_commit_id`}}-{{user `git_branch`}}"
       },
       {
         "type": "docker-push",
