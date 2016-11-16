@@ -5,14 +5,7 @@
   "builders": [{
     "type": "docker",
     "image": "imageintelligence/scala",
-    "export_path": "image.tar",
-    "run_command": [
-      "--publish-all",
-      "--workdir", "/app",
-      "-d", "-i", "-t",
-      "{{.Image}}",
-      "sbt", "compile"
-    ]
+    "export_path": "image.tar"
   }],
   "provisioners": [
     {
