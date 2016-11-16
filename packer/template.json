@@ -27,12 +27,14 @@
     [
       {
         "type": "docker-import",
-        "repository": "imageintelligence/http4sbin-learning-docker",
+        "repository": "imageintelligence/http4sbin-learning-docker"
+      },
+      {
+        "type": "docker-push",
         "login": true,
         "login_email": "{{user `registry_email`}}",
         "login_password": "{{user `registry_password`}}"
-      },
-      "docker-push"
+      }
     ]
   ]
 }
