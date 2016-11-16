@@ -1,5 +1,7 @@
 # Requirements
 
+[![Build Status](https://travis-ci.org/davidvuong/http4sbin-learning-docker.svg?branch=master)](https://travis-ci.org/davidvuong/http4sbin-learning-docker)
+
 In no particular order:
 
 - Logging middleware that logs the request and the response code. Should be generic on "how" you log (perhaps pass in 
