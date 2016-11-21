@@ -7,6 +7,7 @@ if [ $OPERATION = "start" ]; then
     -v $(pwd):/app \
     -v ~/.ivy2:/root/.ivy2 \
     -v ~/.sbt:/root/.sbt \
+    -p 127.0.0.1:8080:8080 \
     --publish-all \
     --rm \
     --workdir /app \
