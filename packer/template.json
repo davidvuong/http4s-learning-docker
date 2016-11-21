@@ -33,6 +33,14 @@
         "tag": "{{user `git_commit_id`}}-{{user `git_branch`}}"
       },
       {
+        "type": "docker-push",
+        "login": true,
+        "login_username": "{{user `login_username`}}",
+        "login_password": "{{user `login_password`}}"
+      }
+    ],
+    [
+      {
         "type": "docker-import",
         "repository": "imageintelligence/http4sbin-learning-docker",
         "tag": "{{user `git_branch`}}"
